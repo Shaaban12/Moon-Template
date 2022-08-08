@@ -12,6 +12,7 @@ body {
     height: 100vh;
 }
 
+/* Start Nan bar */
 header {
     position: fixed;
     width: 100%;
@@ -47,10 +48,24 @@ header ul li a:hover, .active {
     color: #200016;
     
 }
+/* End Nan bar */
+/* Start Main Section */
 .main {
     position: relative;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#200016,transparent);
+    z-index: 998;
 }
 .main img {
     position: absolute;
@@ -60,4 +75,25 @@ header ul li a:hover, .active {
 }
 #moon {
     mix-blend-mode: screen;
+    transform: translateY(70px);
 }
+.code {
+    font-size: 30px;
+    text-transform: uppercase;
+    transform: translatey(-140px);
+}
+/* End Main Section */
+
+/* Start Content Section */
+.content {
+    padding: 30px;
+}
+.content h2 {
+    margin: 30px;
+}
+.content p {
+    margin:30px;
+}
+
+
+/* End Content Section */
