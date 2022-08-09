@@ -17,15 +17,19 @@ window.onscroll = ()=> {
     river.style.top = value + 'px';
     boat.style.top = value + 'px';
     boat.style.left = value * 3 + 'px';
-    if (value <= 90){
+    if (value <= 67){
         code.style.fontSize = value + 'px';
         code.style.position ='fixed';
-
-        if (value >= 475) {
-            code.style.display ='none';
-        }else {
-            code.style.display ='block';
-        }
+    }
+    if (value >= 450) {
+        code.style.display ='none';
+    }else {
+        code.style.display ='block';
+    }
+    if (value >= 101) {
+        document.querySelector('.main').style.background =' linear-gradient(#376281,#10001f)';
+    }else{
+        document.querySelector('.main').style.background =' linear-gradient(#200016,#10001f)';
     }
     
 }

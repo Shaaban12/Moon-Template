@@ -80,6 +80,7 @@ header ul li a:hover, .active {
     transform: translateY(70px);
 }
 .code {
+    display: block;
     font-size: 30px;
     text-transform: uppercase;
     transform: translatey(-140px);
