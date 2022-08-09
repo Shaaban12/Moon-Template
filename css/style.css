@@ -49,6 +49,7 @@ header ul li a:hover, .active {
     
 }
 /* End Nan bar */
+
 /* Start Main Section */
 .main {
     position: relative;
@@ -57,6 +58,7 @@ header ul li a:hover, .active {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .main::after {
     content: '';

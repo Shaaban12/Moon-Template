@@ -8,3 +8,24 @@ let mountains7 = document.getElementById('mountains7');
 let code = document.querySelector('.code');
 
 
+window.onscroll = ()=> {
+    let value = scrollY; 
+    stars.style.left = value +'px';
+    moon.style.top = value * 4 + 'px';
+    mountains3.style.top = value * 2 + 'px';
+    mountains4.style.top = value * 1.5 + 'px';
+    river.style.top = value + 'px';
+    boat.style.top = value + 'px';
+    boat.style.left = value * 3 + 'px';
+    if (value <= 90){
+        code.style.fontSize = value + 'px';
+        code.style.position ='fixed';
+
+        if (value >= 475) {
+            code.style.display ='none';
+        }else {
+            code.style.display ='block';
+        }
+    }
+    
+}
